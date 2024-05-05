@@ -1,0 +1,99 @@
+$treeColor: #b7ca88;
+$treeColor2: #50593c;
+$treeColor3: #537a00;
+$treeColor4: #e7ffa9;
+$treeColor5: #f7ffe1;
+$greyColor: #dcdcdc;
+
+
+
+.contact {
+    margin: 15px 45px;
+
+    .contact-container {
+        font-weight: 500;
+
+        span {
+            background: url("https://cdn.pixabay.com/photo/2017/02/18/01/27/background-2076336_1280.jpg");
+            padding-right: 30px;
+            background-size: cover;
+            border-radius: 50px;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+
+            &:hover {
+                background-color: darkgreen;
+                background-blend-mode: luminosity;
+            }
+        }
+
+        svg {
+            width: 50px;
+            height: 40px;
+            margin-bottom: -10px;
+            margin-left: 20px;
+        }
+
+        p,
+        a {
+
+            line-height: 60px;
+            width: 450px;
+            margin: 35px;
+            color: $treeColor3;
+            font-size: 25px;
+
+        }
+
+        a {
+            display: flex;
+        }
+
+
+        h4 {
+            color: darkgreen;
+            font-size: 34px;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+
+
+    }
+
+
+
+}
+
+@media (max-width:420px) {
+    .contact {
+        margin: 15px 10px;
+
+        .contact-container {
+            h4 {
+                font-size: 28px;
+            }
+
+
+            p,
+            a {
+                margin: 35px 5px;
+                font-size: 18px;
+
+            }
+
+            span {
+                padding-right: 20px;
+                margin-left: 5px;
+
+            }
+
+            svg {
+                width: 40px;
+                height: 30px;
+                margin-bottom: -10px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

@@ -1,0 +1,156 @@
+$treeColor: #b7ca88;
+$treeColor2: #50593c;
+$treeColor3: #537a00;
+$treeColor4: #e7ffa9;
+$treeColor5: #f7ffe1;
+$greyColor: #dcdcdc;
+
+
+
+.best {
+    margin-left: 35px;
+    max-width: 100%;
+    overflow-x: hidden;
+    margin-bottom: 20vh;
+    position: relative;
+    padding: 10px 0px 20px 0px;
+
+
+    h2 {
+        word-spacing: 2px;
+        letter-spacing: 1px;
+        font-size: 34px;
+        color: $treeColor2;
+        border-bottom: 3px solid $treeColor2;
+        width: max-content;
+        line-height: 60px;
+    }
+
+    .best-container {
+        display: flex;
+        transition: 0.2s ease-in-out;
+
+        .best-box {
+            text-decoration: none;
+            text-align: center;
+            padding: 10px 45px 10px;
+            box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.03);
+            border: 1.5px;
+            border-style: solid;
+            border-color: #dcdcdc;
+            border-radius: 10px;
+            cursor: pointer;
+            margin: 15px 30px;
+            transition: 0.2s ease-in-out;
+            background: url("../../../images/greenMarble.webp");
+            background-color: #001a00;
+            background-blend-mode: hard-light;
+            background-size: cover;
+
+            &:hover {
+                box-shadow: 10px 10px 54px rgba(0, 0, 0, 0.11);
+                background-color: darkgreen;
+            }
+
+            .link-container {
+                text-decoration: none;
+
+
+                img {
+                    width: 200px;
+                    height: 250px;
+                    margin-bottom: -30px;
+                    transition: 0.2s ease-in-out;
+
+                }
+
+                h6 {
+                    color: $treeColor2;
+                    white-space: nowrap;
+                    letter-spacing: 1px;
+                    word-spacing: -1px;
+                    font-size: 20px;
+                    font-weight: 700;
+                    line-height: -100px;
+                    margin-bottom: 15px;
+                }
+            }
+
+            .price {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            svg {
+                background-color: #50593c;
+                color: snow;
+                padding: 5px 5px;
+                border-radius: 5px;
+                width: 35px;
+                height: 25px;
+                cursor: pointer;
+
+
+                &:hover {
+                    background-color: $treeColor3;
+                }
+            }
+
+
+        }
+    }
+
+    .best-arrow-left,
+    .best-arrow-right {
+        width: 50px;
+        background-color: $treeColor2;
+        height: 50px;
+        color: $treeColor4;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 100px;
+        bottom: 0;
+        margin: auto;
+        z-index: 999;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $treeColor3;
+        }
+    }
+
+    .best-arrow-left {
+        left: 10px;
+
+    }
+
+    .best-arrow-right {
+        right: 10px;
+    }
+}
+
+
+
+@media (max-width:420px) {
+    .best {
+        .best-container {
+
+            .best-box {
+                padding: 5px 15px;
+                margin: 15px 15px;
+
+                .link-container {
+                    img {
+                        width: 150px;
+                        height: 200px;
+                    }
+
+
+                }
+            }
+        }
+    }
+}

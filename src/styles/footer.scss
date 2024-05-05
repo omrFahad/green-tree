@@ -1,0 +1,132 @@
+$treeColor: #b7ca88;
+$treeColor2: #50593c;
+$treeColor3: #537a00;
+$treeColor4: #e7ffa9;
+$treeColor5: #f7ffe1;
+$greyColor: #dcdcdc;
+
+
+.footer {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-image: url("../../../images/leaves-7150481_1280.webp");
+    background-size: cover;
+    width: 100%;
+    margin-top: 250px;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+
+        .footer-item {
+
+            &:nth-child(3) {
+                line-height: 1.22;
+                display: flex;
+                flex-direction: column;
+
+                .social-icon {
+                    margin-top: -30px;
+
+
+                    a {
+                        display: flex;
+                        font-size: 20px;
+                        margin: 15px 45px;
+                        color: $treeColor4;
+                        cursor: pointer;
+
+                        span {
+                            padding-top: 7.5px;
+                        }
+
+                        svg {
+                            color: $treeColor5;
+                            padding-right: 5px;
+                            width: 55px;
+                            height: 45px;
+
+                        }
+                    }
+                }
+
+
+            }
+
+
+            h6 {
+                text-align: center;
+                font-size: 32px;
+                color: $treeColor5;
+                margin: 35px 35px;
+                letter-spacing: 1px;
+                border-bottom: 3px solid $treeColor5;
+                line-height: 60px;
+            }
+
+            p {
+                white-space: nowrap;
+                line-height: 40px;
+                font-size: 24px;
+                color: $treeColor4;
+                margin: 35px;
+                margin-top: -10px;
+            }
+
+            ul {
+                list-style: none;
+                color: $treeColor4;
+                margin-top: -10px;
+                display: flex;
+                flex-direction: column;
+
+                a {
+                    text-decoration: none;
+                    color: $treeColor4;
+                    cursor: pointer;
+                    font-weight: 400;
+                    font-size: 28px;
+                    margin: 10px 0px;
+                }
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:620px) {
+    .footer {
+        margin-top: 0px;
+    }
+}
+
+@media (max-width:500px) {
+    .footer {
+        margin-top: 350px;
+
+        .footer-container {
+
+            .footer-item {
+                p {
+                    white-space: wrap;
+                    line-height: 40px;
+                    font-size: 22px;
+                    color: $treeColor4;
+                    margin: 35px;
+                    margin-top: -10px;
+                }
+
+
+            }
+        }
+    }
+}
+
+
+@media (max-width:300px) {
+    .footer {
+        width: 130%;
+    }
+}

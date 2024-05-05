@@ -1,0 +1,35 @@
+$treeColor: #b7ca88;
+$treeColor2: #50593c;
+$treeColor3: #537a00;
+$treeColor4: #e7ffa9;
+$treeColor5: #f7ffe1;
+$greyColor: #dcdcdc;
+$greenColor: #00b400;
+
+.frequent {
+    margin: 40px;
+
+    h2 {
+        font-size: 34px;
+        letter-spacing: 1px;
+        font-weight: bolder;
+        color: darkgreen;
+    }
+
+    .frequent-container {
+        margin: 40px;
+
+
+        h4 {
+            font-size: 28px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            color: $greenColor;
+        }
+
+        p {
+            font-size: 24px;
+            color: #242424;
+        }
+    }
+}
