@@ -8,7 +8,7 @@ import { CartItemContext } from '../context/CartData'
 let Best = ({ data }) => {
     let [slideIndex, setSlideIndex] = useState(0)
 
-    let { addToCart, increaseHeight, qty } = useContext(CartItemContext)
+    let { addToCart, increaseHeight, qty, setScroll } = useContext(CartItemContext)
 
     // Handle Click
     let handleClick = (direction) => {
@@ -28,7 +28,7 @@ let Best = ({ data }) => {
 
                 {data.map(item =>
                     <div className='best-box'>
-                        <Link to={`/single/${item.id}`} className='link-container'>
+                        <Link to={`/single/${item.id}`} className='link-container' onClick={() => setScroll(true)}>
                             <img src={item.image} />
                             <h6>{item.title}</h6>
 

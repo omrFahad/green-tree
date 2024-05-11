@@ -7,10 +7,14 @@ import { useContext, useState } from 'react'
 
 let Single = () => {
 
-    let { addToCart } = useContext(CartItemContext)
+    let { addToCart, scroll, setScroll } = useContext(CartItemContext)
     let [qty, setQty] = useState(1)
     let { id } = useParams()
     let single = trees.find(s => s.id === +id)
+
+    if (scroll == true) {
+        window.scrollTo(0, 0);
+    }
     return (
         <div className="single">
             <div className="single-contanier">

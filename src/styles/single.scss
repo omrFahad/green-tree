@@ -61,8 +61,6 @@ $greyColor: #dcdcdc;
                 line-height: 35px;
             }
 
-
-
         }
 
         .price-container {
@@ -126,7 +124,6 @@ $greyColor: #dcdcdc;
                 }
 
             }
-
 
         }
     }
@@ -248,8 +245,6 @@ $greyColor: #dcdcdc;
                     margin-right: 20px;
                 }
 
-
-
             }
         }
     }
@@ -294,7 +289,8 @@ $greyColor: #dcdcdc;
 
 @media (max-width:620px) {
     .single {
-        height: 300vh;
+        height: 200vh;
+        margin-bottom: 50px;
 
         .single-contanier {
             width: 80%;
@@ -344,9 +340,15 @@ $greyColor: #dcdcdc;
     }
 }
 
-@media (max-width:350px) {
 
+@media(max-width:500px)and (max-height:500px) {
     .single {
-        height: 200vh;
+        height: 300vh
+    }
+}
+
+@media(max-height:700px) {
+    .single {
+        height: 250vh
     }
 }

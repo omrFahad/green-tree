@@ -24,7 +24,7 @@ let Footer = () => {
                 <div className='footer-item'>
                     <h6>Who Us</h6>
                     <p>
-                        A store for offer diffrent types of trees<br />
+                        A store for offer different types of trees<br />
                         and we take care to provide hight quality<br />
                         service and give the best price in market<br />
                     </p>

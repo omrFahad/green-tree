@@ -13,6 +13,7 @@ let CartItemProvider = ({ children }) => {
     let [cartItem, setCartItem] = useState(getCartItem || [])
     let [qty, setQty] = useState(1)
     let [num, setNum] = useState(1)
+    let [scroll, setScroll] = useState(false)
     const [height, setHeight] = useState(getHeight || '120vh');
 
 
@@ -92,6 +93,8 @@ let CartItemProvider = ({ children }) => {
                 height,
                 updateHeight,
                 cartItemLength: cartItem.length,
+                scroll,
+                setScroll
             }}>
             {children}
         </CartItemContext.Provider>
